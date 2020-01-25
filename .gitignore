@@ -149,3 +149,5 @@ dmypy.json
 # yanbc addition
 tests/
 playground/
+references/
+pyvenv/

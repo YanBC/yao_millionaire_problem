@@ -7,7 +7,7 @@ from Crypto.Util import number
 import numpy as np
 
 class Millionaire:
-    def __init__(self, num_million, max_million=10, num_bits=2048):
+    def __init__(self, num_million, max_million=10, num_bits=1024):
         self.key = RSA.generate(2048)
         self.million = num_million
         self.max_million = max_million
@@ -71,3 +71,4 @@ if __name__ == '__main__':
     Alice_p, Alice_batch_z = Alice.get_batch_z(Bob_ciphertext)
 
     result = Bob.peer_is_richer(Alice_p, Alice_batch_z)
+
